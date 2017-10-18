@@ -14,5 +14,45 @@
         document.getElementById("area")
       );
     </script>
+
+    <div id="area2"></div>
+    <script type="text/babel">
+      var HelloWorld = React.createClass({
+        render: function() {
+          return (
+            <h1>HELLO WORLD from React Class!</h1>
+          )
+        }
+      });
+      ReactDOM.render(
+        <HelloWorld />,
+        document.getElementById("area2")
+      );
+    </script>
+
+    <div id="area3"></div>
+    <script type="text/babel">
+      var HelloWorld = React.createClass({
+        propTypes: {
+            name: React.PropTypes.string.isRequired
+        },
+
+        getDefaultProps: function() {
+          return {
+            name: "World!"
+          }
+        },
+
+        render: function() {
+          return (
+            <h1>HELLO {this.props.name}!</h1>
+          )
+        }
+      });
+      ReactDOM.render(
+        <HelloWorld name="Rafael"/>,
+        document.getElementById("area3")
+      );
+    </script>
   </body>
 </html>
