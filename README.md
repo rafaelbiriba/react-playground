@@ -4,9 +4,17 @@ React playground for learning
 
 ![image](example.png)
 
+## TODO (for later)
 
+- Play with tests
 
-## Getting Started with Create React App
+- Improve game code
+
+- Try to migrate it to react native and make it android game
+
+---
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
